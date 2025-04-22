@@ -1,105 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Chuck's Track</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #f5f7fa;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding-top: 60px;
-    }
-
-    .container {
-      background: #fff;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      max-width: 600px;
-      width: 90%;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 20px;
-    }
-
-    audio {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-
-    .lyrics {
-      text-align: left;
-      white-space: pre-line;
-      line-height: 1.6;
-      font-size: 1rem;
-    }
-
-    footer {
-      margin-top: 40px;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <h1>Chuck's Track</h1>
-    
-    <audio controls>
-      <source src="https://www.dropbox.com/scl/fi/ko83h8im0q1ecwwfumcln/chuck7R2.mpeg?rlkey=s9lbflbh5op0bqnknzs9rlouw&st=05z00twq&raw=1" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
-
-    <div class="lyrics">
-      <h3>Lyrics</h3>
-      <p>
-        Six friends on the hallowed track at Silverstone that day,
-Crimson Ferraris gleaming under British skies so gray,
-V12 engines screaming, carbon fiber cutting through the spray,
-The scent of burning rubber as we pushed the cars to play.
-Chuck's bachelor party legend, champagne flowing all around,
-The sacred British circuit where racing gods were crowned.
-Feels like yesterday when Pirelli tires kissed the rain-slicked ground,
-Creating bonds and memories that would forever stay profound.<br>
-
-We became legends on that Formula 1 track,
-The rush of speed, adrenaline surging through our veins, no turning back,
-Six friends, scarlet stallions roaring past Becketts and Stowe,
-Hearts racing with the tachometer, faces all aglow.
-Chuck, you made history when our brotherhood was sealed in speed,
-Happy birthday to the man who planted friendship's strongest seed,
-Racing through life with passion, leaving others in your wake,
-The memories we forged that day, no time can ever take.`<br>
-
-We became legends on that Formula 1 track,
-The rush of speed, adrenaline surging through our veins, no turning back,
-Six friends, scarlet stallions roaring past Becketts and Stowe,
-Hearts racing with the tachometer, faces all aglow.
-Chuck, you made history when our brotherhood was sealed in speed,
-Happy birthday to the man who planted friendship's strongest seed,
-Racing through life with passion, leaving others in your wake,
-The memories we forged that day, no time can ever take.🎶<br>
-      </p>
-    </div>
-  </div>
-
-  <footer>
-    &copy; 2025 Framed Melody. All rights reserved.
-  </footer>
-</body>
-</html>
-
 
 
 </body>
@@ -205,4 +103,137 @@ The memories we forged that day, no time can ever take.🎶<br>
   </footer>
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Framed Melody</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding-top: 60px;
+    }
+
+    .container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      max-width: 700px;
+      width: 90%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.4rem;
+      margin-bottom: 30px;
+    }
+
+    .custom-player {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+    }
+
+    button {
+      background: #333;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background: #111;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      max-width: 600px;
+    }
+
+    .lyrics {
+      text-align: left;
+      white-space: pre-line;
+      line-height: 1.6;
+      font-size: 1rem;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.9rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Framed Melody</h1>
+
+    <div class="custom-player">
+      <audio id="audio" preload="metadata">
+        <source src="https://www.dropbox.com/scl/fi/ko83h8im0q1ecwwfumcln/chuck7R2.mpeg?rlkey=s9lbflbh5op0bqnknzs9rlouw&st=05z00twq&raw=1" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <button id="playBtn">▶️ Play</button>
+      <input type="range" id="seekBar" value="0" step="1">
+    </div>
+
+    <div class="lyrics">
+      <h3>Lyrics</h3>
+      <p>
+        (Add your lyrics here — line by line if you like!)
+
+        You can format them freely.
+        Even add timestamps if needed.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Framed Melody. All rights reserved.
+  </footer>
+
+  <script>
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('playBtn');
+    const seekBar = document.getElementById('seekBar');
+
+    playBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playBtn.textContent = '⏸️ Pause';
+      } else {
+        audio.pause();
+        playBtn.textContent = '▶️ Play';
+      }
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      seekBar.max = audio.duration;
+      seekBar.value = audio.currentTime;
+    });
+
+    seekBar.addEventListener('input', () => {
+      audio.currentTime = seekBar.value;
+    });
+  </script>
+</body>
+</html>
+
 
