@@ -6,7 +6,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Framed Melody</title>
+  <title>Chuck's Track</title>
   <style>
     body {
       margin: 0;
@@ -114,7 +114,7 @@ The memories we forged that day, no time can ever take.🎶<br>
       margin: 0;
       padding: 0;
       font-family: 'Segoe UI', Tahoma, sans-serif;
-      background: #f5f7fa;
+      background: #f0f2f5;
       color: #333;
       display: flex;
       flex-direction: column;
@@ -123,19 +123,20 @@ The memories we forged that day, no time can ever take.🎶<br>
       padding-top: 60px;
     }
 
-    .container {
-      background: #fff;
+    .player-box {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
       padding: 40px;
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      max-width: 700px;
+      max-width: 600px;
       width: 90%;
-      text-align: center;
     }
 
     h1 {
-      font-size: 2.4rem;
+      text-align: center;
+      font-size: 2rem;
       margin-bottom: 30px;
+      color: #222;
     }
 
     .custom-player {
@@ -143,27 +144,51 @@ The memories we forged that day, no time can ever take.🎶<br>
       flex-direction: column;
       align-items: center;
       gap: 20px;
-      margin-bottom: 40px;
+      margin-bottom: 30px;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
     }
 
     button {
-      background: #333;
+      background-color: #333;
       color: #fff;
       border: none;
       padding: 12px 24px;
       border-radius: 8px;
-      font-size: 1.1rem;
+      font-size: 1rem;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background: #111;
+      background-color: #000;
     }
 
     input[type="range"] {
       width: 100%;
-      max-width: 600px;
+      max-width: 100%;
+      appearance: none;
+      height: 8px;
+      background: #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: background 0.3s;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      background: #333;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-top: -4px;
     }
 
     .lyrics {
@@ -171,17 +196,19 @@ The memories we forged that day, no time can ever take.🎶<br>
       white-space: pre-line;
       line-height: 1.6;
       font-size: 1rem;
+      margin-top: 20px;
     }
 
     footer {
-      margin-top: 50px;
+      margin-top: 40px;
       font-size: 0.9rem;
       color: #888;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <div class="container">
+  <div class="player-box">
     <h1>Framed Melody</h1>
 
     <div class="custom-player">
@@ -190,7 +217,10 @@ The memories we forged that day, no time can ever take.🎶<br>
         Your browser does not support the audio element.
       </audio>
 
-      <button id="playBtn">▶️ Play</button>
+      <div class="controls">
+        <button id="playBtn">▶️ Play</button>
+      </div>
+
       <input type="range" id="seekBar" value="0" step="1">
     </div>
 
