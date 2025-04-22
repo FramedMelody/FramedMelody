@@ -265,5 +265,167 @@ The memories we forged that day, no time can ever take.🎶<br>
   </script>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Framed Melody</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #f0f2f5;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding-top: 60px;
+    }
+
+    .player-box {
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+      padding: 40px;
+      max-width: 600px;
+      width: 90%;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .custom-player {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      width: 100%;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #000;
+    }
+
+    input[type="range"] {
+      width: 100%;
+      max-width: 100%;
+      appearance: none;
+      height: 8px;
+      background: #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: background 0.3s;
+    }
+
+    input[type="range"]::-webkit-slider-thumb {
+      appearance: none;
+      width: 16px;
+      height: 16px;
+      background: #333;
+      border-radius: 50%;
+      cursor: pointer;
+      margin-top: -4px;
+    }
+
+    .lyrics {
+      text-align: left;
+      white-space: pre-line;
+      line-height: 1.6;
+      font-size: 1rem;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #888;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="player-box">
+    <h1>Framed Melody</h1>
+
+    <div class="custom-player">
+      <audio id="audio" preload="metadata">
+        <source src="https://www.dropbox.com/scl/fi/ko83h8im0q1ecwwfumcln/chuck7R2.mpeg?rlkey=s9lbflbh5op0bqnknzs9rlouw&st=05z00twq&raw=1" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+
+      <div class="controls">
+        <button id="playBtn">▶️ Play</button>
+      </div>
+
+      <input type="range" id="seekBar" value="0" step="1">
+    </div>
+
+    <div class="lyrics">
+      <h3>Lyrics</h3>
+      <p>
+        (Add your lyrics here — line by line if you like!)
+
+        You can format them freely.
+        Even add timestamps if needed.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 Framed Melody. All rights reserved.
+  </footer>
+
+  <script>
+    const audio = document.getElementById('audio');
+    const playBtn = document.getElementById('playBtn');
+    const seekBar = document.getElementById('seekBar');
+
+    playBtn.addEventListener('click', () => {
+      if (audio.paused) {
+        audio.play();
+        playBtn.textContent = '⏸️ Pause';
+      } else {
+        audio.pause();
+        playBtn.textContent = '▶️ Play';
+      }
+    });
+
+    audio.addEventListener('timeupdate', () => {
+      seekBar.max = audio.duration;
+      seekBar.value = audio.currentTime;
+    });
+
+    seekBar.addEventListener('input', () => {
+      audio.currentTime = seekBar.value;
+    });
+  </script>
+</body>
+</html>
+
 
 
