@@ -50,7 +50,7 @@ h1 {
   top: 20px; /* Space from the top inside the container */
   left: 20px; /* Space from the left inside the container */
   width: 250px; /* Adjusted size */
-  height: 300px;
+  height: auto;
 }
 
 audio {
