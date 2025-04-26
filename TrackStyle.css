@@ -61,6 +61,30 @@ audio {
   height: 20px;
   margin-top: 10px;
 }
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 6rem; /* Reduce font size on smaller screens */
+    margin-top: 0; /* Remove margin at the top */
+    margin-bottom: 20px; /* Reduce space between title and audio */
+  }
+
+  .container {
+    min-height: 60vh; /* Increase the container height to give more space */
+    padding: 40px; /* Add padding to create breathing space */
+    justify-content: center; /* Ensure vertical centering */
+  }
+
+  .logo {
+    width: 200px; /* Make the logo bigger */
+    top: 10px; /* Adjust space from top */
+    left: 10px; /* Adjust space from left */
+  }
+
+  audio {
+    width: 80%; /* Adjust audio player width for better fit */
+    height: 80px; /* Adjust audio player height */
+  }
+}
 
 footer {
   margin-top: 50px;
