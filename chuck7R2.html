@@ -4,36 +4,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Framed Melody</title>
+  <title>Chuck's Track</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Georgia', serif;
-      background: linear-gradient(145deg, #009688, #004d40);
-      color: #e0f2f1;
+      background: #FFFEF2; /* Soft parchment color */
+      color: #4a2f14; /* Deep brown text */
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: flex-start;
       min-height: 100vh;
+      padding-top: 40px;
     }
 
     .container {
-      background: rgba(255, 255, 255, 0.15); /* a bit less transparent */
-      border: 1px solid rgba(255, 255, 255, 0.2);
-      border-radius: 20px;
-      padding: 40px;
-      max-width: 600px;
+      background: #f3e3c3; /* Slightly transparent white */
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
       width: 90%;
       text-align: center;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.25);
+      backdrop-filter: blur(5px);
+    }
+
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 3rem;
+      font-size: 2.5rem;
       margin-bottom: 30px;
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    audio {
+      width: 100%;
+      height: 60px;
+      margin-top: 20px;
+    }
+
+    footer {
+      margin-top: 50px;
+      font-size: 0.8rem;
+      color: #7a5c3b;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img class="logo" src="https://dl.dropboxusercontent.com/scl/fi/19xszdpur41vhjjl49osf/Logo.png?rlkey=6uyg3c23dhyypluywfmz0ay4k&st=gsg618zd" alt="Framed Melody Logo">
+
+    <h1>Chuck's Track</h1>
+
+    <audio controls>
+      <source src="YOUR_AUDIO_FILE_LINK_HERE" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </div>
+
+  <footer>
+    &copy; 2025 Framed Melody. All rights reserved.
+  </footer>
+</body>
+</html>
+
       font-weight: bold;
       color: #ffffff;
       letter-spacing: 1px;
