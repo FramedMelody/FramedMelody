@@ -6,7 +6,7 @@
       font-family: 'Noto Serif', serif;
   font-weight: 400;
 
-       font-family: 'Noto Serif', serif;
+      
       font-size: 6rem;
       margin-top: 150px; /* Give space for the logo */
       margin-bottom: 30px;
@@ -55,6 +55,7 @@
       position: absolute; /* Position the logo absolutely within the container */
       top: 5px; /* Space from the top inside the container */
       left: 1px;
+      bottom: 10px;
       width: 300px; /* Maintain the logo size */
       height: auto;
     }
