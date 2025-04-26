@@ -25,30 +25,19 @@
       text-align: center;
       backdrop-filter: blur(5px);
     }
-  .container1 {
-  position: relative;
-  background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/trackback.jpg'); /* Use your new GitHub image as background */
-  background-size: cover; /* Ensure the texture covers the container */
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  max-width: 700px;
-  width: 90%;
-  text-align: center;
-  backdrop-filter: blur(5px);
-}
 
-    .logo {
-  position: absolute; /* Position the logo absolutely within the container */
+
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
   background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/Logo-Edited.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-      top: 20px; /* Space from the top inside the container */
-      left: 20px; /* Space from the left inside the container */
-      width: 150px; /* Maintain the logo size */
-      height: auto;
-    }
+}
 
 
     h1 {
