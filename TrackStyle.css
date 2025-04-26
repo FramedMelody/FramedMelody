@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center; /* Vertically center the content */
   min-height: 100vh;
   padding-top: 40px;
 }
@@ -18,7 +18,7 @@ h1 {
   font-family: 'Noto Serif', serif;
   font-weight: 400;
   font-size: 6rem; /* Adjusted font size */
-  margin-top: 10px; /* Give space for the logo */
+  margin-top: 0; /* Removed top margin */
   margin-bottom: 30px; /* Space after the title */
   letter-spacing: 1px;
   color: rgba(2, 2, 0, 0.8);  /* Softer color with transparency (deep brown) */
@@ -36,58 +36,67 @@ h1 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 700px;
- 
+  min-height: 50vh; /* Set minimum height */
   text-align: center;
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
-  align-items: center;
-   justify-content: flex-start; /* Align content from the top */
-  height: auto; /* Let the height adjust based on content */
-  min-height: 50vh; /* Set a minimum height for the container */
-  padding-top: 120px; /* Adjust to give more space for title */
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
 }
 
 .logo {
   position: absolute;
   top: 20px; /* Space from the top inside the container */
   left: 20px; /* Space from the left inside the container */
-  width: 250px; /* Adjusted size */
+  width: 150px; /* Adjusted size */
   height: auto;
 }
 
 audio {
   width: 90%;
-  height: 20px;
-  margin-top: 10px;
-}
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 6rem; /* Reduce font size on smaller screens */
-    margin-top: 40vw; /* Remove margin at the top */
-    margin-bottom: 20px; /* Reduce space between title and audio */
-  }
-
-  .container {
-    min-height: 60vh; /* Increase the container height to give more space */
-    padding: 40px; /* Add padding to create breathing space */
-    justify-content: center; /* Ensure vertical centering */
-  }
-
-  .logo {
-    width: 300px; /* Make the logo bigger */
-    top: 10px; /* Adjust space from top */
-    left: 10px; /* Adjust space from left */
-  }
-
-  audio {
-    width: 80%; /* Adjust audio player width for better fit */
-    height: 80px; /* Adjust audio player height */
-  }
+  height: 100px;
+  margin-top: 20px;
 }
 
 footer {
   margin-top: 50px;
   font-size: 0.8rem;
   color: #7a5c3b;
+}
+
+/* Media query for landscape devices */
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 4rem; /* Make the title smaller on smaller screens */
+  }
+
+  .container {
+    min-height: 60vh; /* Increase the height to give more space */
+  }
+
+  .logo {
+    width: 120px; /* Reduce logo size for smaller screens */
+    top: 10px; /* Adjust top space */
+    left: 10px; /* Adjust left space */
+  }
+
+  audio {
+    width: 80%; /* Adjust width of the audio player for better fit */
+    height: 80px; /* Adjust audio player height */
+  }
+}
+
+/* Media query for portrait mode on mobile */
+@media screen and (max-width: 480px) {
+  h1 {
+    font-size: 6rem; /* Reduce font size even further on very small screens */
+    margin-top: 50px; /* Adjust margin */
+  }
+
+  .logo {
+    width: 100px; /* Further reduce logo size */
+    top: 10px; /* Adjust top space */
+    left: 10px; /* Adjust left space */
+  }
 }
