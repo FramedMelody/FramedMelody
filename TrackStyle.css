@@ -18,7 +18,7 @@ h1 {
   font-family: 'Noto Serif', serif;
   font-weight: 400;
   font-size: 6rem; /* Adjusted font size */
-  margin-top: 160px; /* Give space for the logo */
+  margin-top: 50vw; /* Give space for the logo */
   margin-bottom: 30px; /* Space after the title */
   letter-spacing: 1px;
   color: rgba(2, 2, 0, 0.8);  /* Softer color with transparency (deep brown) */
