@@ -49,8 +49,8 @@ h1 {
   position: absolute;
   top: 20px; /* Space from the top inside the container */
   left: 20px; /* Space from the left inside the container */
-  width: 150px; /* Adjusted size */
-  height: auto;
+  width: 250px; /* Adjusted size */
+  height: 300px;
 }
 
 audio {
