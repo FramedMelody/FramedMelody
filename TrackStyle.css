@@ -36,13 +36,16 @@ h1 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 700px;
-  min-height: 50vh; /* Half screen height */
+ 
   text-align: center;
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start; /* Align content from the top */
+   justify-content: flex-start; /* Align content from the top */
+  height: auto; /* Let the height adjust based on content */
+  min-height: 50vh; /* Set a minimum height for the container */
+  padding-top: 120px; /* Adjust to give more space for title */
 }
 
 .logo {
