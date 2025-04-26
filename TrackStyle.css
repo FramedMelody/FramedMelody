@@ -21,10 +21,11 @@ body {
 
 
 .logo {
-  position: relative; /* 🛠️ Not absolute anymore */
-  width: 120px; /* Make it a bit bigger */
+  position: absolute; /* Position the logo absolutely within the container */
+  top: 20px; /* Space from the top inside the container */
+  left: 20px; /* Space from the left inside the container */
+  width: 300px; /* Increased logo size */
   height: auto;
-  margin-bottom: 20px; /* Space between logo and title */
 }
 
 h1 {
