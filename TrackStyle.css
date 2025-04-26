@@ -50,8 +50,8 @@
 
     .logo {
       position: absolute; /* Position the logo absolutely within the container */
-      top: 20px; /* Space from the top inside the container */
-      left: 20px; /* Space from the left inside the container */
+      top: 5px; /* Space from the top inside the container */
+      left: 5px; /* Space from the left inside the container */
       width: 300px; /* Maintain the logo size */
       height: auto;
     }
@@ -60,8 +60,8 @@
 
 
     audio {
-      width: 150%;
-      height: 100px;
+      width: 90%;
+      height: 150px;
       margin-top: 20px;
     }
 
