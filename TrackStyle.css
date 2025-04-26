@@ -40,11 +40,16 @@
 
     .logo {
       position: absolute; /* Position the logo absolutely within the container */
+        background-image: url('https://your-link-to-the-logo.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
       top: 20px; /* Space from the top inside the container */
       left: 20px; /* Space from the left inside the container */
       width: 150px; /* Maintain the logo size */
       height: auto;
     }
+
 
     h1 {
        font-family: 'Noto Serif', serif;
