@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@300&display=swap');
+
+h1 {
+  font-family: 'Noto Serif', serif;
+  font-weight: 300;
+}
 body {
   margin: 0;
   padding: 0;
@@ -24,14 +29,14 @@ body {
 
 h1 {
   font-family: 'Noto Serif', serif;
-  font-size: 2rem; /* Slightly smaller but clean */
+  font-size: 5rem; /* Slightly smaller but clean */
   margin: 10px 0 20px 0; /* Top, Right, Bottom, Left */
   letter-spacing: 1px;
 }
 
 audio {
-  width: 90%; /* Make the audio player stretch nicely */
-  height: 50px;
+  width: 100%; /* Make the audio player stretch nicely */
+  height: 100px;
   margin-top: 20px;
 }
 
