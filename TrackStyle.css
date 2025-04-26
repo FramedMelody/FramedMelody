@@ -12,19 +12,7 @@ body {
   padding-top: 40px;
 }
 
-.container {
-  position: relative;
-  background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/trackback.jpg'); /* Use your new GitHub image as background */
-  background-size: cover; /* Ensure the texture covers the container */
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  width: 90%;
-  max-width: 90%;
-  height: auto;
-  text-align: center;
-  backdrop-filter: blur(5px);
-}
+
 
 .logo {
   position: absolute; /* Position the logo absolutely within the container */
@@ -75,9 +63,7 @@ footer {
 }
 
 
-  .logo {
-    width: 120px; /* Even smaller logo */
-  }
+  
 
   h1 {
     font-size: 1.8rem; /* Smaller title for very small screens */
