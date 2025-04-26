@@ -12,6 +12,9 @@
       margin-bottom: 30px;
       
       letter-spacing: 1px;
+
+      color: rgba(2, 2, 0, 0.8);  /* Softer color with transparency (deep brown) */
+   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);  /* Soft shadow for depth */
     }
  body {
       margin: 0;
