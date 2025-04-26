@@ -18,7 +18,7 @@ h1 {
   font-family: 'Noto Serif', serif;
   font-weight: 400;
   font-size: 6rem; /* Adjusted font size */
-  margin-top: 50vw; /* Give space for the logo */
+  margin-top: 10px; /* Give space for the logo */
   margin-bottom: 30px; /* Space after the title */
   letter-spacing: 1px;
   color: rgba(2, 2, 0, 0.8);  /* Softer color with transparency (deep brown) */
@@ -64,7 +64,7 @@ audio {
 @media screen and (max-width: 480px) {
   h1 {
     font-size: 6rem; /* Reduce font size on smaller screens */
-    margin-top: 0; /* Remove margin at the top */
+    margin-top: 40vw; /* Remove margin at the top */
     margin-bottom: 20px; /* Reduce space between title and audio */
   }
 
