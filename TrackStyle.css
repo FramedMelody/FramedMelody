@@ -7,7 +7,7 @@
   font-weight: 400;
 
        font-family: 'Noto Serif', serif;
-      font-size: 2.5rem;
+      font-size: 4rem;
       margin-top: 80px; /* Give space for the logo */
       margin-bottom: 30px;
       
@@ -27,20 +27,25 @@
       padding-top: 40px;
     }
 
-    .container {
-      position: relative;
-      background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/trackback.jpg'); /* Use your new GitHub image as background */
-      background-size: cover; /* Ensure the texture covers the container */
-      padding: 30px;
-      max-width: 700px;
+  .container {
+  position: relative;
+  background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/trackback.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 700px;
   min-height: 50vh; /* 🛠️ New: Only half of the screen height */
-      border-radius: 16px;
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-      max-width: 700px;
-      width: 90%;
-      text-align: center;
-      backdrop-filter: blur(5px);
-    }
+  text-align: center;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content inside */
+}
+
 
 
     .logo {
