@@ -2,75 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Framed Melody</title>
+  <title>Chuck's Track</title>
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Georgia', serif;
-      background: #f5ecd9; /* parchment background */
-      color: #333;
+      background: #FFFEF2; /* Soft parchment color */
+      color: #4a2f14; /* Deep brown text */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: flex-start;
       min-height: 100vh;
-      padding: 30px 10px;
+      padding-top: 40px;
     }
 
     .container {
-      background: rgba(255, 255, 255, 0.8);
-      border: 1px solid #ddd;
+      background: #f3e3c3; /* Slightly transparent white */
+      padding: 30px;
       border-radius: 16px;
-      padding: 40px;
-      max-width: 600px;
-      width: 100%;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      max-width: 700px;
+      width: 90%;
       text-align: center;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(5px);
     }
 
-    img.logo {
-      width: 200px;
+    .logo {
+      width: 150px;
       margin-bottom: 20px;
     }
 
     h1 {
       font-size: 2.5rem;
-      margin: 20px 0;
-      color: #222;
+      margin-bottom: 30px;
+      font-weight: bold;
       letter-spacing: 1px;
-    }
-
-    .player-wrapper {
-      background-color: rgba(0, 0, 0, 0.05);
-      border-radius: 12px;
-      padding: 10px;
-      margin-top: 20px;
     }
 
     audio {
       width: 100%;
       height: 60px;
-      border-radius: 8px;
+      margin-top: 20px;
     }
 
     footer {
-      margin-top: 40px;
-      font-size: 0.85rem;
-      color: #555;
+      margin-top: 50px;
+      font-size: 0.8rem;
+      color: #7a5c3b;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <img class="logo" src="your-logo-path-here.png" alt="Framed Melody Logo">
-    <h1>Framed Melody</h1>
-    <div class="player-wrapper">
-      <audio controls>
-        <source src="https://www.dropbox.com/scl/fi/ko83h8im0q1ecwwfumcln/chuck7R2.mpeg?rlkey=s9lbflbh5op0bqnknzs9rlouw&st=05z00twq&raw=1" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    </div>
+    <img class="logo" src="https://dl.dropboxusercontent.com/scl/fi/19xszdpur41vhjjl49osf/Logo.png?rlkey=6uyg3c23dhyypluywfmz0ay4k&st=gsg618zd" alt="Framed Melody Logo">
+
+    <h1>Chuck's Track</h1>
+
+    <audio controls>
+      <source src="YOUR_AUDIO_FILE_LINK_HERE" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
   </div>
 
   <footer>
@@ -78,4 +71,5 @@
   </footer>
 </body>
 </html>
+
 
