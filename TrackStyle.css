@@ -7,7 +7,7 @@
   font-weight: 400;
 
        font-family: 'Noto Serif', serif;
-      font-size: 4rem;
+      font-size: 6rem;
       margin-top: 80px; /* Give space for the logo */
       margin-bottom: 30px;
       
@@ -61,7 +61,7 @@
 
     audio {
       width: 90%;
-      height: 500px;
+      height: 100px;
       margin-top: 20px;
     }
 
