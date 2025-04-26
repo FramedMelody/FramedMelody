@@ -18,26 +18,39 @@ body {
   padding-top: 40px;
 }
 
-
+.container {
+  position: relative;
+  background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/trackback.jpg'); /* Use your new GitHub image as background */
+  background-size: cover; /* Ensure the texture covers the container */
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 90%;
+  height: auto;
+  text-align: center;
+  backdrop-filter: blur(5px);
+}
 
 .logo {
   position: absolute; /* Position the logo absolutely within the container */
   top: 20px; /* Space from the top inside the container */
   left: 20px; /* Space from the left inside the container */
-  width: 300px; /* Increased logo size */
+  width: 200px; /* Increased logo size */
   height: auto;
 }
 
 h1 {
   font-family: 'Noto Serif', serif;
-  font-size: 5rem; /* Slightly smaller but clean */
-  margin: 10px 0 20px 0; /* Top, Right, Bottom, Left */
+  font-size: 3rem; /* Increased title size for better visibility */
+  margin-top: 100px; /* Adjust space for the larger logo */
+  margin-bottom: 30px;
   letter-spacing: 1px;
 }
 
 audio {
-  width: 100%; /* Make the audio player stretch nicely */
-  height: 100px;
+  width: 100%;
+  height: 60px;
   margin-top: 20px;
 }
 
@@ -58,18 +71,19 @@ footer {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 700px;
-  min-height: 50vh; /* 🛠️ New: Only half of the screen height */
+  min-height: 80vh; /* 🔥 New: take up at least 80% of the screen height */
   text-align: center;
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content inside */
+  justify-content: center; /* 🔥 Center content vertically */
 }
 
 
-
-  
+  .logo {
+    width: 120px; /* Even smaller logo */
+  }
 
   h1 {
     font-size: 1.8rem; /* Smaller title for very small screens */
