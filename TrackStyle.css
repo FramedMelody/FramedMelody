@@ -27,17 +27,13 @@
     }
 
 
-.logo {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 150px;
-  height: 150px;
-  background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/Logo-Edited.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
+    .logo {
+      position: absolute; /* Position the logo absolutely within the container */
+      top: 20px; /* Space from the top inside the container */
+      left: 20px; /* Space from the left inside the container */
+      width: 150px; /* Maintain the logo size */
+      height: auto;
+    }
 
 
     h1 {
