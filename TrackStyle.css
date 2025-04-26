@@ -15,7 +15,7 @@
 
     .container {
       position: relative;
-      background: url('trackbackground'), rgba(220, 180, 140, 0.85); /* Parchment texture and overlay */
+      background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/trackback.jpg'); /* Use your new GitHub image as background */
       background-size: cover; /* Ensure the texture covers the container */
       padding: 30px;
       border-radius: 16px;
@@ -39,8 +39,8 @@
 }
 
     .logo {
-      position: absolute; /* Position the logo absolutely within the container */
-        background-image: url('Logo - Edited.png');
+  position: absolute; /* Position the logo absolutely within the container */
+  background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/Logo-Edited.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
