@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Chuck's Track</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+
+
   <style>
     body {
       margin: 0;
       padding: 0;
       font-family: 'Georgia', serif;
       background: #FFFEF2; /* Soft parchment color */
-      color: #4a2f14; /* Deep brown text */
+      color: #000; /* Set text color to black */
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -19,7 +22,9 @@
     }
 
     .container {
-      background: #f3e3c3; /* Slightly transparent white */
+      position: relative;
+      background: url('https://example.com/your-parchment-texture.jpg'), rgba(220, 180, 140, 0.85); /* Parchment texture and overlay */
+      background-size: cover; /* Ensure the texture covers the container */
       padding: 30px;
       border-radius: 16px;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -30,14 +35,19 @@
     }
 
     .logo {
-      width: 150px;
-      margin-bottom: 20px;
+      position: absolute; /* Position the logo absolutely within the container */
+      top: 20px; /* Space from the top inside the container */
+      left: 20px; /* Space from the left inside the container */
+      width: 150px; /* Maintain the logo size */
+      height: auto;
     }
 
     h1 {
+       font-family: 'Noto Serif', serif;
       font-size: 2.5rem;
+      margin-top: 80px; /* Give space for the logo */
       margin-bottom: 30px;
-      font-weight: bold;
+      
       letter-spacing: 1px;
     }
 
@@ -56,14 +66,15 @@
 </head>
 <body>
   <div class="container">
-    <img class="logo" src="https://dl.dropboxusercontent.com/scl/fi/19xszdpur41vhjjl49osf/Logo.png?rlkey=6uyg3c23dhyypluywfmz0ay4k&st=gsg618zd" alt="Framed Melody Logo">
+    <img class="logo" src="https://dl.dropboxusercontent.com/scl/fi/szqlv4utilcv0msao8wy0/Logo-Edited.png?rlkey=wcjsgjm2arc5akvu0hslkc36l&st=7hrpn73r" alt="Framed Melody Logo">
 
     <h1>Chuck's Track</h1>
 
-    <audio controls>
-      <source src="YOUR_AUDIO_FILE_LINK_HERE" type="audio/mpeg">
-      Your browser does not support the audio element.
-    </audio>
+   <audio controls>
+        <source src="https://www.dropbox.com/scl/fi/ko83h8im0q1ecwwfumcln/chuck7R2.mpeg?rlkey=s9lbflbh5op0bqnknzs9rlouw&st=05z00twq&raw=1" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
   </div>
 
   <footer>
