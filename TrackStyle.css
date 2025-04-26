@@ -15,7 +15,7 @@
 
     .container {
       position: relative;
-      background: url('https://example.com/your-parchment-texture.jpg'), rgba(220, 180, 140, 0.85); /* Parchment texture and overlay */
+      background: url('trackbackground'), rgba(220, 180, 140, 0.85); /* Parchment texture and overlay */
       background-size: cover; /* Ensure the texture covers the container */
       padding: 30px;
       border-radius: 16px;
