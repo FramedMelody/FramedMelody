@@ -64,7 +64,7 @@ footer {
   font-size: 0.8rem;
   color: #7a5c3b;
 }
-@media screen and (max-width: 450pts) {
+@media screen and (max-width: 600px) {
   .container {
     min-height: 50vh; /* Keep it as is for landscape */
     padding: 30px;
@@ -78,6 +78,8 @@ footer {
 
   h1 {
     font-size: 5rem; /* Adjust title font size for landscape */
+    margin-top: 40vw; /* Give space for the logo */
+    
   }
 
   audio {
