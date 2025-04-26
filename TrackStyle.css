@@ -9,7 +9,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Vertically center the content */
+  justify-content: flex-start;
   min-height: 100vh;
   padding-top: 40px;
 }
@@ -18,7 +18,7 @@ h1 {
   font-family: 'Noto Serif', serif;
   font-weight: 400;
   font-size: 6rem; /* Adjusted font size */
-  margin-top: 0; /* Removed top margin */
+  margin-top: 160px; /* Give space for the logo */
   margin-bottom: 30px; /* Space after the title */
   letter-spacing: 1px;
   color: rgba(2, 2, 0, 0.8);  /* Softer color with transparency (deep brown) */
@@ -36,13 +36,13 @@ h1 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 700px;
-  min-height: 50vh; /* Set minimum height */
+  min-height: 50vh; /* Half screen height */
   text-align: center;
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically */
-  align-items: center; /* Center content horizontally */
+  align-items: center;
+  justify-content: flex-start; /* Align content from the top */
 }
 
 .logo {
@@ -64,39 +64,24 @@ footer {
   font-size: 0.8rem;
   color: #7a5c3b;
 }
-
-/* Media query for landscape devices */
-@media screen and (max-width: 768px) {
-  h1 {
-    font-size: 4rem; /* Make the title smaller on smaller screens */
-  }
-
+@media screen and (max-width: 450pts) {
   .container {
-    min-height: 60vh; /* Increase the height to give more space */
+    min-height: 50vh; /* Keep it as is for landscape */
+    padding: 30px;
   }
 
   .logo {
-    width: 120px; /* Reduce logo size for smaller screens */
-    top: 10px; /* Adjust top space */
-    left: 10px; /* Adjust left space */
+    width: 120px; /* Adjust size for landscape */
+    top: 20px;
+    left: 20px;
+  }
+
+  h1 {
+    font-size: 5rem; /* Adjust title font size for landscape */
   }
 
   audio {
-    width: 80%; /* Adjust width of the audio player for better fit */
-    height: 80px; /* Adjust audio player height */
-  }
-}
-
-/* Media query for portrait mode on mobile */
-@media screen and (max-width: 480px) {
-  h1 {
-    font-size: 6rem; /* Reduce font size even further on very small screens */
-    margin-top: 50px; /* Adjust margin */
-  }
-
-  .logo {
-    width: 100px; /* Further reduce logo size */
-    top: 10px; /* Adjust top space */
-    left: 10px; /* Adjust left space */
+    width: 90%;
+    height: 100px;
   }
 }
