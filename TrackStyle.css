@@ -1,36 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400&display=swap');
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+  background: #FFFEF2; /* Soft parchment color */
+  color: #000; /* Set text color to black */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  padding-top: 40px;
+}
 
-  
-    h1 {
-      font-family: 'Noto Serif', serif;
+h1 {
+  font-family: 'Noto Serif', serif;
   font-weight: 400;
+  font-size: 6rem; /* Adjusted font size */
+  margin-top: 160px; /* Give space for the logo */
+  margin-bottom: 30px; /* Space after the title */
+  letter-spacing: 1px;
+  color: rgba(2, 2, 0, 0.8);  /* Softer color with transparency (deep brown) */
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);  /* Soft shadow for depth */
+  text-align: center; /* Ensure the title is centered */
+}
 
-      
-      font-size: 6rem;
-      margin-top: 150px; /* Give space for the logo */
-      margin-bottom: 30px;
-      
-      letter-spacing: 1px;
-
-      color: rgba(2, 2, 0, 0.8);  /* Softer color with transparency (deep brown) */
-   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);  /* Soft shadow for depth */
-    }
- body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Georgia', serif;
-      background: #FFFEF2; /* Soft parchment color */
-      color: #000; /* Set text color to black */
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding-top: 40px;
-    }
-
-  .container {
+.container {
   position: relative;
   background-image: url('https://raw.githubusercontent.com/FramedMelody/FramedMelody/main/trackback.jpg');
   background-size: cover;
@@ -40,38 +36,31 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   width: 90%;
   max-width: 700px;
-  min-height: 50vh; /* 🛠️ New: Only half of the screen height */
+  min-height: 50vh; /* Half screen height */
   text-align: center;
   backdrop-filter: blur(5px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center; /* Center content inside */
+  justify-content: flex-start; /* Align content from the top */
 }
 
+.logo {
+  position: absolute;
+  top: 20px; /* Space from the top inside the container */
+  left: 20px; /* Space from the left inside the container */
+  width: 150px; /* Adjusted size */
+  height: auto;
+}
 
+audio {
+  width: 90%;
+  height: 100px;
+  margin-top: 20px;
+}
 
-    .logo {
-      position: absolute; /* Position the logo absolutely within the container */
-      top: 5px; /* Space from the top inside the container */
-      left: 1px;
-      bottom: 10px;
-      width: 300px; /* Maintain the logo size */
-      height: auto;
-    }
-
-
-
-
-    audio {
-      width: 90%;
-      height: 100px;
-      margin-top: 20px;
-    }
-
-    footer {
-      margin-top: 50px;
-      font-size: 0.8rem;
-      color: #7a5c3b;
-    }
-  
+footer {
+  margin-top: 50px;
+  font-size: 0.8rem;
+  color: #7a5c3b;
+}
